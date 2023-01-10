@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+Hackathon Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+To complete this challenge we need to write a function that will help us find the winning project of the hackathon. The winning project will be determined by the average score of all of its ratings.
 
-Try running some of the following tasks:
+🔍 The Hackathon.sol contract is partially setup already. Let's discuss the setup in details!
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+🏁 Your Goal: Find Winner Function
+Create an external, view function findWinner which returns a Project.
+In this function, use the projects storage array to find the project that has the highest average rating amongst its array of ratings.
+Upon finding the highest average, return the project.
